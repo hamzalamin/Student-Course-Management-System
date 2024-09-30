@@ -1,4 +1,4 @@
-package com.wora.Entitys;
+package com.wora.Entities;
 import jakarta.persistence.*;
 
 

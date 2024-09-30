@@ -1,10 +1,10 @@
-package com.wora.Entitys;
+package com.wora.Entities;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "students_courses")
-public class StudentsCourses {
+public class StudentsCourse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,10 +18,10 @@ public class StudentsCourses {
     private Course course;
 
 
-    public StudentsCourses() {
+    public StudentsCourse() {
     }
 
-    public StudentsCourses(Long id, Student student, Course course) {
+    public StudentsCourse(Long id, Student student, Course course) {
         this.id = id;
         this.student = student;
         this.course = course;
