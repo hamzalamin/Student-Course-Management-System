@@ -4,7 +4,7 @@ import com.wora.Entities.StudentsCourse;
 
 import java.util.List;
 
-public interface IStudentCourse {
+public interface IStudentCourseRepository {
     void save(StudentsCourse studentCourse);
     StudentsCourse findById(Long id);
     List<StudentsCourse> findAll();

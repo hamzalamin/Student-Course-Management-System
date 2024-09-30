@@ -1,17 +1,17 @@
 package com.wora.Repositorys.impl;
 
 import com.wora.Entities.StudentsCourse;
-import com.wora.Repositorys.IStudentCourse;
+import com.wora.Repositorys.IStudentCourseRepository;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class StudentCourse implements IStudentCourse {
+public class StudentCourseRepository implements IStudentCourseRepository {
     private final SessionFactory sessionFactory;
 
-    public StudentCourse (SessionFactory sessionFactory) {
+    public StudentCourseRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
